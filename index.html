@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <link rel="icon" href="https://i.ibb.co/d0JNW94Z/logo-l-a-ch-n6.png">
     <base target="_top">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>Quản lý tài trợ- TH&THCS Hợp Thành</title>
+    
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="ketnoi.js"></script>
 
@@ -102,7 +101,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content text-center p-4 border-0 shadow-lg" style="background: rgba(255, 255, 255, 0.95);">
           <div class="mb-4 mt-2">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" width="120">
+            <i class="bi bi-info-circle text-primary" style="font-size: 3rem;"></i>
           </div>
           <h5 class="fw-bold mb-3" style="font-family: 'Segoe UI', sans-serif;" id="trialTitle">Thông báo dùng thử</h5>
           <p class="fs-5 text-secondary" style="font-family: 'Segoe UI', sans-serif;" id="trialMessage">
@@ -115,7 +114,7 @@
 
     <div id="login-overlay" style="display:none;">
       <div class="login-box">
-        <img src="https://i.ibb.co/d0JNW94Z/logo-l-a-ch-n6.png" class="login-logo">
+        <img src="https://i.ibb.co/SXSKh9xM/Logo-m-i-c-a-tr-ng-H-p-Th-Nh.png" class="login-logo">
         <h2 style="color: #0d6efd; margin-top: 0; text-transform: uppercase;">Quản Lý Tài Trợ</h2>
         <h3 style="color: #dc3545; margin-bottom: 25px;">Trường TH&THCS Hợp Thành</h3>
         <p style="font-size: 14px; color: #666; font-style: italic; margin-bottom: 20px;">Hệ thống yêu cầu xác thực bằng tài khoản được cấp quyền</p>
@@ -129,13 +128,13 @@
            <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left"></div>
         </div>
         
-        <div style="margin-top: 30px; font-size: 12px; color: #999; font-weight: bold; text-align: center;">Phát triển bởi: HOÀNG NGỌC LÂM</div>
+        <div style="margin-top: 30px; font-size: 12px; color: #999; font-weight: bold; text-align: center;">Thiết kế và phát triển: HOÀNG NGỌC LÂM</div>
       </div>
     </div>
 
     <div id="access-denied-overlay">
        <div class="denied-card">
-           <img src="https://i.ibb.co/d0JNW94Z/logo-l-a-ch-n6.png" style="height: 80px; margin-bottom: 10px;">
+           <img src="https://i.ibb.co/SXSKh9xM/Logo-m-i-c-a-tr-ng-H-p-Th-Nh.png" style="height: 80px; margin-bottom: 10px;">
            <div class="denied-icon"><i class="bi bi-shield-lock"></i></div>
            <div class="denied-title">KẾT NỐI THÀNH CÔNG</div>
            <p>Xin chào: <span id="denied-email" class="denied-email">email@gmail.com</span></p>
@@ -150,7 +149,7 @@
       
       <div class="school-header">
          <div class="header-left">
-             <img src="https://i.ibb.co/Kj6bF4GM/Logo-TH-THCS-V2.png" alt="Logo" class="school-logo">
+             <img src="https://i.ibb.co/SXSKh9xM/Logo-m-i-c-a-tr-ng-H-p-Th-Nh.png" alt="Logo" class="school-logo">
              <div>
                 <p class="school-name">TRƯỜNG TH&THCS HỢP THÀNH</p>
                 <h3 class="app-title">QUẢN LÝ TÀI TRỢ</h3>
@@ -158,7 +157,7 @@
          </div>
          <div class="dev-badge">
              <div class="dev-box">
-                 <span class="dev-label">Phát triển bởi</span>
+                 <span class="dev-label">Thiết kế và phát triển</span>
                  <span class="dev-name">HOÀNG NGỌC LÂM</span>
              </div>
              <div class="user-login-info">
@@ -232,7 +231,7 @@
            </div>
         </div>
       </div>
-      <div class="dev-footer">Phát triển bởi: <b>Hoàng Ngọc Lâm</b> - Trường TH&THCS Hợp Thành</div>
+      <div class="dev-footer">Thiết kế và phát triển: <b>Hoàng Ngọc Lâm</b> - Trường TH&THCS Hợp Thành</div>
     </div>
 
     <div class="modal fade" id="modalAdd" data-bs-backdrop="static"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-success text-white py-2"><h5 class="modal-title fw-bold">THÊM MỚI</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body p-3"><form id="formAdd"><div class="row g-2"><div class="col-md-4"><label class="fw-bold small">Ngày tháng</label><input type="text" class="form-control form-control-sm" id="inpDate" placeholder="dd/mm/yyyy" onkeyup="dateInputMask(this)" maxlength="10"></div><div class="col-md-8"><label class="fw-bold small">Nội dung</label><input type="text" class="form-control form-control-sm" id="inpContent"></div><div class="col-md-2"><label class="fw-bold small">ĐVT</label><input type="text" class="form-control form-control-sm" id="inpUnit"></div><div class="col-md-3"><label class="fw-bold small">SL Nhận</label><input type="number" class="form-control form-control-sm" id="inpQtyIn" oninput="calcTotal()"></div><div class="col-md-3"><label class="fw-bold small">Giá</label><input type="number" class="form-control form-control-sm" id="inpPrice" oninput="calcTotal()"></div><div class="col-md-4"><label class="fw-bold small">Thành tiền</label><input type="text" class="form-control form-control-sm bg-light fw-bold text-danger" id="inpTotalIn" readonly></div><div class="col-md-6"><label class="fw-bold small">SL Phát</label><input type="number" class="form-control form-control-sm" id="inpQtyOut"></div><div class="col-md-6"><label class="fw-bold small">Tiền Phát</label><input type="number" class="form-control form-control-sm" id="inpTotalOut"></div><div class="col-md-6 pt-1"><div class="form-floating"><textarea class="form-control" id="inpSponsor" style="height: 70px"></textarea><label>Bên Tài trợ</label></div></div><div class="col-md-6 pt-1"><div class="form-floating"><textarea class="form-control" id="inpReceiver" style="height: 70px"></textarea><label>Bên Nhận</label></div></div><div class="col-12"><label class="fw-bold small">Ghi chú</label><input type="text" class="form-control form-control-sm" id="inpNote"></div><div class="col-12 mt-2 pt-2 border-top"><div class="d-flex align-items-center bg-light p-2 rounded border"><button type="button" class="btn btn-primary btn-sm fw-bold" onclick="openUploadModalCV()"><i class="bi bi-paperclip"></i> Đính kèm File</button><div class="ms-3"><span id="lblFileStatus" class="fst-italic text-muted small">Chưa có file.</span></div><input type="hidden" id="hiddenFileUrl"></div></div></div></form></div><div class="modal-footer py-1"><button class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Hủy</button><button class="btn btn-success btn-sm fw-bold" onclick="submitForm()">LƯU DỮ LIỆU</button></div></div></div></div>
@@ -296,10 +295,9 @@
       let FILES_CV = [];
       const ROOT_ID_CV = '1KChaLe3wwh05zV1y_9Ob2NDHwIxl3Vv7'; 
 
-      // --- BỔ SUNG: LOGIC KIỂM TRA BẢN QUYỀN (TRIAL PERIOD) ---
       function checkTrialPeriod() {
-        return true; // <--- CHỈ CẦN THÊM DÒNG NÀY ĐỂ TẠM TẮT TÍNH NĂNG KHÓA
-        const trialStartDate = new Date(2026, 1, 7); // 07/02/2026 (Tháng 1 là tháng 2)
+        return true; 
+        const trialStartDate = new Date(2026, 1, 7);
         const trialDays = 14;
         const trialExpiryDate = new Date(trialStartDate);
         trialExpiryDate.setDate(trialStartDate.getDate() + trialDays);
@@ -368,14 +366,19 @@
 
       function handleCredentialResponse(response) {
         const payload = decodeJwtResponse(response.credential);
-        const taiKhoan = payload.email; // Giá trị lấy từ Google
+        const taiKhoan = payload.email; 
+        
+        // BẢO MẬT: Bắt buộc lưu trữ Token để gửi lên máy chủ đính kèm từng Request
         sessionStorage.setItem("TT_TAI_KHOAN", taiKhoan);
+        sessionStorage.setItem("TT_TOKEN_BAO_MAT", response.credential);
         window.TT_TAI_KHOAN_HE_THONG = taiKhoan; 
+        
         checkPermissionAndLoad(taiKhoan);
       }
 
       function logoutGoogle() {
         sessionStorage.removeItem("TT_TAI_KHOAN");
+        sessionStorage.removeItem("TT_TOKEN_BAO_MAT"); // Xóa sạch chứng chỉ
         window.TT_TAI_KHOAN_HE_THONG = null;
         location.reload(); 
       }
@@ -405,7 +408,6 @@
         });
       }
 
-      // HÀM LÀM TRÒN SỐ
       function formatInt(val) {
         if (!val) return '';
         var num = parseFloat(val.toString().replace(/\./g, '').replace(',', '.'));
@@ -488,7 +490,6 @@
         });
       }
       
-      // Khối xử lý Upload Tài liệu
       function updateLinkCV(duongDan){ document.getElementById('hiddenFileUrl').value=duongDan; document.getElementById('lblFileStatus').innerHTML='<i class="bi bi-check-circle-fill"></i> Đã đính kèm hồ sơ!'; document.getElementById('lblFileStatus').className="fw-bold text-success small"; }
       function openUploadModalCV(){ document.getElementById('upload_modal_cv').style.display='flex'; loadFoldersCV(); }
       
