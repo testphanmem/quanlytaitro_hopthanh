@@ -1,10 +1,17 @@
 // --- CẤU HÌNH HỆ THỐNG ---
-// Thầy lưu ý thay link Deploy App Script (doPost) mới nhất vào đây sau khi cập nhật nhé
+// Đồng chí lưu ý thay link Deploy App Script (doPost) mới nhất vào đây sau khi cập nhật nhé
 const linkapi = "https://script.google.com/macros/s/AKfycbys1vRnTRAgGnJLAR1CRoHMs0APmGfALISRylysGv06AyLM9_fun7cQroRj7l5aaVum/exec"; 
 
-// --- HÀM KẾT NỐI API CHUNG ---
+// --- HÀM KẾT NỐI API CHUNG (Đã vá cơ chế truyền Token bảo mật) ---
 async function callServer(tenYeuCau, duLieuTai = {}) {
     duLieuTai.yeuCau = tenYeuCau;
+    
+    // BẢO MẬT: Tự động nhúng chữ ký Token từ Session vào mọi luồng trao đổi dữ liệu
+    const tokenBaoMat = sessionStorage.getItem("TT_TOKEN_BAO_MAT");
+    if (tokenBaoMat) {
+        duLieuTai.token = tokenBaoMat;
+    }
+
     try {
         const phanHoi = await fetch(linkapi, {
             method: 'POST',
